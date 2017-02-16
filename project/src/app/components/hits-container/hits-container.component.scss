@@ -21,6 +21,11 @@ $container-padding: 2em;
     margin-top: -$container-padding;
 }
 
+.row > p {
+    font-family: $secundary-font;
+    color: $support-text;
+}
+
 .custom-row {
     margin: auto;
 
@@ -28,11 +33,6 @@ $container-padding: 2em;
         color: $chaordic-red;
         font-family: $title-font;
         margin-bottom: 0.5em;
-    }
-
-    p {
-        font-family: $secundary-font;
-        color: $support-text;
     }
 
     .hits-container {
