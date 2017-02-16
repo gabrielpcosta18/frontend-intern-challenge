@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReducerComponent } from './components/reducer/reducer.component';
+import { RankingComponent } from './components/ranking/ranking.component';
+
+import { UrlItemDataService } from './components/shared/url-item-data.service';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
@@ -15,7 +18,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, HomeComponent, HeaderComponent, ReducerComponent
+    AppComponent, HomeComponent, HeaderComponent, ReducerComponent, RankingComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [UrlItemDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

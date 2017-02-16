@@ -1,0 +1,51 @@
+@import "../../../assets/variables.scss";
+
+h1 {
+    color: $chaordic-red;
+    font-family: 'Roboto Slab', cursive;
+    margin-bottom: 0.5em;
+}
+
+.short-url-container {
+    float: left;
+
+    p {
+        font-weight: bold;
+        font-family: 'Roboto';
+        color: $chaordic-red;
+    }        
+}
+
+.hits-url-container {
+    float: right;
+
+    p {
+        font-family: 'Roboto';
+        color: $support-text;
+    }    
+}
+
+.ranking-container {
+     align-items: center; 
+     text-align: center; 
+     justify-content: center; 
+     padding: 2em;
+}
+
+.ranking-item {
+    list-style: none;
+}
+
+hr {
+   display: block;
+   position: relative;
+   margin: auto;
+   height: 0;
+   width: 100%;
+   font-size: 1px;
+   border-top: 1px solid ($divider);
+}
+
+ .row:last-child > hr {
+     width: 0;
+ }
