@@ -1,0 +1,13 @@
+$half-logo-width: 50px;
+
+.navbar {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -$half-logo-width !important; 
+    display: block;
+}
