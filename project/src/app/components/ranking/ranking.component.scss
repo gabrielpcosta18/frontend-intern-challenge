@@ -2,7 +2,7 @@
 
 h1 {
     color: $chaordic-red;
-    font-family: 'Roboto Slab', cursive;
+    font-family: $title-font;
     margin-bottom: 0.5em;
 }
 
@@ -11,7 +11,7 @@ h1 {
 
     p {
         font-weight: bold;
-        font-family: 'Roboto';
+        font-family: $secundary-font;
         color: $chaordic-red;
     }        
 }
@@ -20,7 +20,7 @@ h1 {
     float: right;
 
     p {
-        font-family: 'Roboto';
+        font-family: $secundary-font;
         color: $support-text;
     }    
 }
