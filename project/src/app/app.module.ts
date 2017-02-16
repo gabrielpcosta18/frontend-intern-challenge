@@ -9,6 +9,7 @@ import { HomeComponent } from './components/pages/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReducerComponent } from './components/reducer/reducer.component';
 import { RankingComponent } from './components/ranking/ranking.component';
+import { HitsContainerComponent } from './components/hits-container/hits-container.component';
 
 import { UrlItemDataService } from './components/shared/url-item-data.service';
 
@@ -18,7 +19,9 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, HomeComponent, HeaderComponent, ReducerComponent, RankingComponent
+    AppComponent, HomeComponent, HeaderComponent,
+    ReducerComponent, RankingComponent,
+    HitsContainerComponent
   ],
   imports: [
     BrowserModule,

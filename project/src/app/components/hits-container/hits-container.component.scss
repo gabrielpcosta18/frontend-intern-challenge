@@ -1,0 +1,48 @@
+@import '../../../assets/variables.scss';
+
+$container-padding: 2em;
+
+.container-fluid {
+    background: $divider;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: $container-padding;
+    text-align: center
+}
+
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+	border-top: 2em solid #FFF;
+    margin: auto;
+    margin-top: -$container-padding;
+}
+
+.custom-row {
+    margin: auto;
+
+    h1 {
+        color: $chaordic-red;
+        font-family: $title-font;
+        margin-bottom: 0.5em;
+    }
+
+    p {
+        font-family: $secundary-font;
+        color: $support-text;
+    }
+
+    .hits-container {
+        display:inline-block;
+        color: $chaordic-red;
+        font-family: $title-font;
+        font-size: 30px;
+        text-align: center;
+        padding: 0.2em;
+        background: #FFF;
+        margin-bottom: 0.2em;
+    }    
+}
