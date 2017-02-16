@@ -1,0 +1,56 @@
+$header-color: #FFF;
+$button-border-color: #FB6914;
+
+h1, h5 {
+    color: $header-color;
+}
+
+.reducer-container{
+    background-image: url(assets/background-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    margin: 0 !important;
+    padding: 0;
+
+    width: 100%;
+    min-height: 440px;
+    
+    text-align: center;
+}
+
+.reducer-container > .col-md-4 {
+    min-width: 300px;
+    max-width: 445px;
+}
+
+.custom-text-input {
+  background: none;
+  border: none;
+  border-bottom: solid 2px $button-border-color;
+  color: $button-border-color;
+  padding: 0.3em;
+  font-weight: bold;
+  margin-bottom: 1em; 
+}
+
+
+.custom-button {
+    border: none;
+    background: $button-border-color;
+    color: #FFF;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.input-container {
+    margin-top: 3em; 
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
