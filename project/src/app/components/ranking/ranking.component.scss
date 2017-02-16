@@ -39,11 +39,21 @@ h1 {
 hr {
    display: block;
    position: relative;
-   margin: auto;
+   margin: 8px auto;
+
+   padding: 0;
    height: 0;
+   line-height: 0;
+   max-height: 0;
+   
    width: 100%;
+   
    font-size: 1px;
+   clear: both;
+   
+   border: none;
    border-top: 1px solid ($divider);
+   border-bottom: 1px solid #ffffff;
 }
 
  .row:last-child > hr {
