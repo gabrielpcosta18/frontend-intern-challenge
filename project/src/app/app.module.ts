@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ReducerComponent } from './components/reducer/reducer.component';
 import { RankingComponent } from './components/ranking/ranking.component';
 import { HitsContainerComponent } from './components/hits-container/hits-container.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 import { UrlItemDataService } from './components/shared/url-item-data.service';
 
@@ -21,7 +22,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent, HomeComponent, HeaderComponent,
     ReducerComponent, RankingComponent,
-    HitsContainerComponent
+    HitsContainerComponent, FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+@import '../../../assets/variables.scss';
+
+.footer {
+    padding: 1em 1em 1em 1em;
+}
+
+.chaordic-link {
+    p > a {
+        color: $chaordic-red;
+        font-weight: bold;
+    }
+    float:left;
+}
+
+.social-icons {
+    float: right;
+
+    span + span {
+        margin-left: 2em;
+    }
+
+    margin-top: -0.5em;
+}
