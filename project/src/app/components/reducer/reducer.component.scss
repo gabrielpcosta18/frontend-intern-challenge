@@ -26,15 +26,27 @@ h1, h5 {
 }
 
 .custom-text-input {
-  background: none;
-  border: none;
-  border-bottom: solid 2px $button-border-color;
-  color: $button-border-color;
-  padding: 0.3em;
-  font-weight: bold;
-  margin-bottom: 1em; 
+    background: none;
+    border: none;
+    border-bottom: solid 2px $button-border-color;
+    color: $button-border-color;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    margin-bottom: 1em; 
+    width: 70%;
 }
 
+.custom-text-input:focus {
+    outline: none;
+}
+
+.custom-text-input:-moz-placeholder {
+    color: $button-border-color;
+}
+
+.custom-text-input::-webkit-input-placeholder {
+    color: $button-border-color;
+}
 
 .custom-button {
     border: none;
@@ -53,4 +65,10 @@ h1, h5 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 440px){
+    .custom-text-input {
+        width: 80%;
+    }
 }
