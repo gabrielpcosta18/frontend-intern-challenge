@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { UrlItem } from '../shared/url-item';
 import { UrlItemDataService } from '../shared/url-item-data.service';
@@ -13,8 +13,11 @@ export class HitsContainerComponent implements OnInit {
   urlItems: UrlItem[] = [];
   totalClicks: number;
 
-  constructor(private _urlItemDataService:UrlItemDataService) {
-    this._urlItemDataService.getAllUrlItems().subscribe(this.onDataUpdate.bind(this));
+  constructor(private _urlItemDataService:UrlItemDataService, ref: ChangeDetectorRef) {
+    ref.detach();
+    setInterval(() => {
+      ref.detectChanges();
+    }, 500);
   }
 
   ngOnInit() { 
