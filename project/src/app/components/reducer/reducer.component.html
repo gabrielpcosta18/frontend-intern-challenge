@@ -10,7 +10,8 @@
                     type="text" 
                     placeholder="Cole o seu link aqui"
                     [(ngModel)]="inputTextValue"
-                    [ngClass]="{'normal': !showRemoveButton, 'reduced': showRemoveButton}">
+                    [ngClass]="{'normal': !showRemoveButton, 'reduced': showRemoveButton}"
+                    [disabled]="showRemoveButton">
 
                 <a (click)="removeButtonClick($event.target)" 
                     [hidden]="!showRemoveButton">

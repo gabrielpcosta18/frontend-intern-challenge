@@ -23,6 +23,7 @@ export class ReducerComponent {
     if(this.inputTextValue !== '') {
       this.showRemoveButton = true;
       this.reductUrlButtonText = "Copiar";
+      this.encodeUrl();
     }
   }
 
@@ -30,6 +31,10 @@ export class ReducerComponent {
     this.showRemoveButton = false;
     this.inputTextValue = '';
     this.reductUrlButtonText = "Encurtar";
+  }
+
+  encodeUrl() {
+    this.inputTextValue = "http://www.chr.dc/" + encodeURIComponent(btoa(this.inputTextValue)).substring(0, 5);
   }
 }
 
