@@ -14,6 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { UrlItemDataService } from './components/shared/url-item-data.service';
 
+import { ClipboardModule } from 'ngx-clipboard';
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
 ];
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ClipboardModule
   ],
   providers: [UrlItemDataService],
   bootstrap: [AppComponent]
