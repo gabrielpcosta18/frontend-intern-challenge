@@ -19,7 +19,8 @@
             </div>
 
             <button class="custom-button" 
-                (click)="reductUrlButtonClick($event.target)">
+                (click)="reductUrlButtonClick($event.target)"
+                ngxClipboard [cbContent]="inputTextValue">
                 {{reductUrlButtonText}}
             </button>
         </div>        

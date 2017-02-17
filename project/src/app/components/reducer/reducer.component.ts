@@ -20,14 +20,10 @@ export class ReducerComponent {
   }
 
   reductUrlButtonClick(element) {
-    console.log(this.showRemoveButton);
-    this.showRemoveButton = !this.showRemoveButton;
-
-    if(this.showRemoveButton) 
+    if(this.inputTextValue !== '') {
+      this.showRemoveButton = true;
       this.reductUrlButtonText = "Copiar";
-    else this.reductUrlButtonText = "Encurtar";
-
-    //element.textContent = this.reductUrlButtonText;
+    }
   }
 
   removeButtonClick() {
