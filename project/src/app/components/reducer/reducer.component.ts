@@ -20,7 +20,7 @@ export class ReducerComponent {
   }
 
   reductUrlButtonClick(element) {
-    if(this.inputTextValue !== '') {
+    if(this.inputTextValue !== '' && !this.showRemoveButton) {
       this.showRemoveButton = true;
       this.reductUrlButtonText = "Copiar";
       this.encodeUrl();
