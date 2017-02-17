@@ -1,31 +1,38 @@
-# Project
+# Project Frontend Intern Challenge
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+Desenvolvimento de uma landing page simulando um encurtador de links utilizando: 
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular2
+- TypeScript
+- Bootstrap
 
-## Code scaffolding
+## Instruções para execução
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+No diretório do project, instale os módulos utilizando o comando npm install. Assim que eles forem instalados, é possível rodar o servidor de teste utilizando o comando ng serve e acessá-lo através do link `http://localhost:4200/`.
 
-## Build
+**NOTE: NodeJS  versão 6.9.5    NPM     versão 4.2.0**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Estrutura dos Componentes
 
-## Running unit tests
+Seguindo os princípios de modularização do Angular2, a landing page foi organizada em diferentes componentes como é possível ver na figura a seguir. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![componentes](https://github.com/gabrielpcosta18/frontend-intern-challenge/tree/gabriel-costa/Assets/logo-chaordic.png)
 
-## Running end-to-end tests
+## Estrutura dos Arquivos
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+A estrutura de diretórios foi estabelecida com o objetivo de encapsular os componentes em seus respectivos módulos. Cada diretório do componente contém o html, scss, ts para esse componente. 
 
-## Deploying to GitHub Pages
+```
+└── src
+    └── app                        -- root              component
+       └── components 
+           ├── footer              -- footer            component
+           ├── header              -- header            component
+           ├── hits-container      -- hits-container    component
+           ├── pages               -- pages             component
+           ├── ranking             -- ranking           component
+           ├── reducer             -- reducer           component
+           └── shared              -- shared            service and class 
+```
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+O diretório de shared possui serviços que podem ser compartilhados por diversos componentes (nesta aplicação em específico, para serviços de coleta de dados a partir do arquivo de json disponibilizado).
