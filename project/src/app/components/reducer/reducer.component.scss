@@ -1,9 +1,19 @@
+@import '../../../assets/variables.scss';
+
 $header-color: #FFF;
 $button-border-color: #FB6914;
 $label-color: #FFF;
 
 h1, h5 {
     color: $header-color;
+}
+
+h1 {
+    font-family: $title-font;
+}
+
+h5 {
+    font-family: $secundary-font;
 }
 
 .reducer-container{
@@ -16,7 +26,7 @@ h1, h5 {
     padding: 0;
 
     width: 100%;
-    min-height: 440px;
+    min-height: 90vh;
     
     text-align: center;
 }
@@ -30,7 +40,7 @@ h1, h5 {
     float: left;
     background: none;
     border: none;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.4em;
     font-weight: bold;
     width: 90%;
 
@@ -77,10 +87,11 @@ h1, h5 {
     border: none;
     background: $button-border-color;
     color: $label-color;
-    padding: 0.5em;
+    padding: 0.6em;
     font-weight: bold;
-    font-size: 15px;
-    width: 80px;
+    font-size: 13px;
+    width: 90px;
+    justify-content: center;
 }
 
 .input-container {

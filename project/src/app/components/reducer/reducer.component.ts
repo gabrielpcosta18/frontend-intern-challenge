@@ -8,7 +8,7 @@ import { Component, Input, ChangeDetectorRef } from '@angular/core';
 
 export class ReducerComponent {
   showRemoveButton: boolean = false;
-  reductUrlButtonText: string = "Encurtar";
+  reductUrlButtonText: string = "ENCURTAR";
   inputTextValue: string = '';
   
   constructor(private ref: ChangeDetectorRef) { 
@@ -22,7 +22,7 @@ export class ReducerComponent {
   reductUrlButtonClick(element) {
     if(this.inputTextValue !== '' && !this.showRemoveButton) {
       this.showRemoveButton = true;
-      this.reductUrlButtonText = "Copiar";
+      this.reductUrlButtonText = "COPIAR";
       this.encodeUrl();
     }
   }
@@ -30,7 +30,7 @@ export class ReducerComponent {
   removeButtonClick() {
     this.showRemoveButton = false;
     this.inputTextValue = '';
-    this.reductUrlButtonText = "Encurtar";
+    this.reductUrlButtonText = "ENCURTAR";
   }
 
   encodeUrl() {
