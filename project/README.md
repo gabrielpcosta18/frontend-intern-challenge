@@ -8,7 +8,7 @@ Desenvolvimento de uma landing page simulando um encurtador de links utilizando:
 
 ## Instruções para execução
 
-No diretório do project, instale os módulos utilizando o comando npm install. Assim que eles forem instalados, é possível rodar o servidor de teste utilizando o comando ng serve e acessá-lo através do link `http://localhost:4200/`.
+No diretório do project, instale os módulos utilizando o comando `npm install`. Assim que eles forem instalados, é possível rodar o servidor de teste utilizando o comando `ng serve` e acessá-lo através do link `http://localhost:4200/`.
 
 **NOTE: NodeJS  versão 6.9.5    NPM     versão 4.2.0**
 
@@ -16,7 +16,7 @@ No diretório do project, instale os módulos utilizando o comando npm install. 
 
 Seguindo os princípios de modularização do Angular2, a landing page foi organizada em diferentes componentes como é possível ver na figura a seguir. 
 
-![componentes](https://github.com/gabrielpcosta18/frontend-intern-challenge/tree/gabriel-costa/Assets/logo-chaordic.png)
+![componentes](../Assets/documentation.png)
 
 ## Estrutura dos Arquivos
 
