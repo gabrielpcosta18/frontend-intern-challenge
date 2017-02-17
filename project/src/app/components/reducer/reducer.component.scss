@@ -1,5 +1,6 @@
 $header-color: #FFF;
 $button-border-color: #FB6914;
+$label-color: #FFF;
 
 h1, h5 {
     color: $header-color;
@@ -26,14 +27,20 @@ h1, h5 {
 }
 
 .custom-text-input {
+    float: left;
     background: none;
     border: none;
-    border-bottom: solid 2px $button-border-color;
-    color: $button-border-color;
     padding-bottom: 0.5em;
     font-weight: bold;
-    margin-bottom: 1em; 
-    width: 70%;
+    width: 90%;
+
+    .normal {
+        color: $button-border-color;
+    }
+
+    .reduced {
+        color: $label-color;
+    }
 }
 
 .custom-text-input:focus {
@@ -48,13 +55,32 @@ h1, h5 {
     color: $button-border-color;
 }
 
+.text-container {
+    display: inline-block;
+    background: none;
+    border: none;
+    border-bottom: solid 2px $button-border-color;
+    font-weight: bold;
+    margin-bottom: -1em; 
+    width: 70%;
+    
+    .normal {
+        color: $button-border-color;
+    }
+
+    .reduced {
+        color: $label-color;
+    }
+}
+
 .custom-button {
     border: none;
     background: $button-border-color;
-    color: #FFF;
+    color: $label-color;
     padding: 0.5em;
     font-weight: bold;
     font-size: 15px;
+    width: 80px;
 }
 
 .input-container {
@@ -67,8 +93,20 @@ h1, h5 {
     justify-content: center;
 }
 
+.input-text-button {
+    border: none;
+    background: none;
+    float: right;
+    color: $label-color;
+}
+
+.show {
+  right: 5px;
+}
+
 @media screen and (max-width: 440px){
-    .custom-text-input {
-        width: 80%;
+    .custom-button {
+        margin-top: 20px;
+        width: 70%;
     }
 }

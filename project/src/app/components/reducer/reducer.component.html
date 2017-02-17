@@ -2,9 +2,26 @@
     <div class="col-md-4">        
         <h1>Encurte seus links.</h1>
         <h5>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</h5>                    
-        <div class="input-container">
-            <input class="custom-text-input" type="text" placeholder="Cole o seu link aqui">
-            <button class="custom-button">Encurtar</button>
+
+        <div class="row input-container">
+            <div class="text-container">
+                <input id="inputTextValue" 
+                    class="custom-text-input" 
+                    type="text" 
+                    placeholder="Cole o seu link aqui"
+                    [(ngModel)]="inputTextValue"
+                    [ngClass]="{'normal': !showRemoveButton, 'reduced': showRemoveButton}">
+
+                <a (click)="removeButtonClick($event.target)" 
+                    [hidden]="!showRemoveButton">
+                    <span class="glyphicon glyphicon-remove input-text-button"></span>
+                </a>
+            </div>
+
+            <button class="custom-button" 
+                (click)="reductUrlButtonClick($event.target)">
+                {{reductUrlButtonText}}
+            </button>
         </div>        
     </div> 
 </div>
