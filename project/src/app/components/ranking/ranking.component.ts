@@ -17,7 +17,10 @@ export class RankingComponent implements OnInit {
 
   ngOnInit() {
     this._urlItemDataService.getAllUrlItems().subscribe(
-      items => this.urlItems = items,
+      items => {
+        this.urlItems = items;
+        this.urlItems = this.getFiveFirstUrlItems();
+      },
       error => console.log('Error'));
   }
 
